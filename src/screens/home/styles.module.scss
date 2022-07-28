@@ -1,0 +1,124 @@
+.main {
+  padding-top: 50px;
+}
+
+.infos {
+  background: rgba(244, 244, 244, 0.56);
+  color: #313131;
+  border-radius: 10px;
+  padding: 20px 50px;
+  min-height: 50vh;
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.actions {
+  margin: 20px 0;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 25px;
+  border: 1px solid #8532af;
+  background: #8532af;
+  border-radius: 15px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.32s ease;
+
+  svg {
+    font-size: 1.25em;
+  }
+
+  :global(.t-icon) {
+    margin-left: 10px;
+  }
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:focus-within {
+    background: #741f9f;
+  }
+}
+
+.table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: separate;
+  border-spacing: 0 0.375rem;
+
+  thead {
+    display: table-header-group;
+
+    tr {
+      padding: 1.25rem 1.875rem;
+
+      th {
+        padding: 10px;
+        font-size: 1.0625rem;
+        background: rgba(125, 125, 125, 0.4);
+        text-align: left;
+        font-weight: 600;
+
+        &:first-child {
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+
+        &:last-child {
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+      }
+    }
+  }
+
+  tbody {
+    display: table-header-group;
+
+    tr {
+      padding: 1.25rem 1.875rem;
+      background: rgba(220, 220, 220, 0.5);
+
+      &:nth-child(odd) {
+        background: rgba(220, 220, 220, 0.1);
+      }
+
+      td {
+        padding: 10px;
+        font-size: 1rem;
+
+        &:first-child {
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+
+        &:last-child {
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+
+        &:global(.actions) {
+          button + button {
+            margin-left: 10px;
+          }
+        }
+
+        button {
+          padding: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
